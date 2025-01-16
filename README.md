@@ -18,6 +18,8 @@ docker compose up
 
 ### Run the Python script
 
+Before running the demo script, make sure you have set the `OPENAI_API_KEY` environment variable either via `export` or in a `.env` file.
+
 ```shell
 # The first time, initialize the vector store
 python demo.py --init-store
@@ -28,8 +30,8 @@ python demo.py
 # If you want to use the LLM query engine on top of the vector search, use the following command
 python demo.py --use-llm
 
-# To explore the table used as the backend of the vector store
-mariadb -h 127.0.0.1 -u root -p test 
+# To explore the MariaDB table used as the backend of the vector store
+mariadb -h 127.0.0.1 -u root -ptest test 
 ```
 
 ### Clean up

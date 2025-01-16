@@ -1,3 +1,7 @@
+"""
+This is a demo of the MariaDB vector store integration for LlamaIndex.
+"""
+
 import argparse
 import logging
 import sys
